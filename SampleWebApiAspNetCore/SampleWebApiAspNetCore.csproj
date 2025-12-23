@@ -7,14 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mapster" Version="7.4.0" />
-    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.8" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
-    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.7" />
-  </ItemGroup>
+  <PackageReference Include="Mapster" Version="7.4.0" />
+  <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+
+  <!-- ASP.NET Core 8 compatible -->
+  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.8" />
+
+  <!-- API Versioning (latest stable, works with net8) -->
+  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+
+  <!-- EF Core 8 compatible -->
+  <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.8" />
+
+  <!-- Swagger (latest stable for net8) -->
+  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+
+  <PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.7" />
+</ItemGroup>
+
 
 </Project>
