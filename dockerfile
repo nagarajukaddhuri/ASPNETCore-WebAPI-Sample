@@ -12,8 +12,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build /app/out .
 
-# Azure App Service SAFE defaults
-ENV ASPNETCORE_URLS=http://+:80
-EXPOSE 80
+# EXPOSE is optional but fine
+EXPOSE 8080
 
 ENTRYPOINT ["dotnet", "SampleWebApiAspNetCore.dll"]
