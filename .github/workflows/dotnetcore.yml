@@ -1,4 +1,4 @@
-name: .NET Core n
+name: .NET Core
 
 on: [push]
 
