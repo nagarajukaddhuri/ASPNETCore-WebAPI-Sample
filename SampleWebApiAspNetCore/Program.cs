@@ -64,3 +64,4 @@ if (app.Environment.IsDevelopment())
                 description.GroupName.ToUpperInvariant());
         }
     });
+}
