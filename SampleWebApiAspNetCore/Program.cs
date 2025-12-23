@@ -70,6 +70,11 @@ else
 
 app.UseCors("AllowAllOrigins");
 // app.UseHttpsRedirection();
+var port = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrEmpty(port))
+{
+    builder.WebHost.UseUrls($"http://*:{port}");
+}
 
 app.UseAuthorization();
 
